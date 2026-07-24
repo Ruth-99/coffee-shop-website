@@ -129,7 +129,98 @@ span{
     cursor: pointer;
     
 }
+/* ===========================
+   SCROLL ANIMATIONS
+=========================== */
 
+/* Image Box */
+.box{
+    border:2px solid #b07a4d;
+    border-radius: 8px;
+    position: relative;
+    width: 400px;
+    height:450px;
+    margin: 40px;
+
+    /* Animation */
+    animation: slideLeft linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+/* Text */
+.text2{
+    margin-top: 150px;
+
+    /* Animation */
+    animation: slideRight linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+/* Button */
+.btn3{
+    height: 40px;
+    width: 130px;
+    color: #8C5E3C;
+    background-color: black;
+    border: 1px solid #8C5E3C;
+    padding: 10px;
+    border-radius: 5px;
+
+    /* Animation */
+    animation: fadeUp linear;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+}
+
+.btn3:hover{
+    background-color: #8C5E3C;
+    color: white;
+    font-weight: 600;
+    border: 1px solid white;
+}
+
+
+/* ===========================
+   KEYFRAMES
+=========================== */
+
+@keyframes slideLeft{
+    from{
+        opacity: 0;
+        transform: translateX(-120px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight{
+    from{
+        opacity: 0;
+        transform: translateX(120px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .section2{
     display: flex;
     background-color: black;
@@ -137,6 +228,8 @@ span{
     padding: 100px;
     padding-left: 200px;
     gap: 30px;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
 }
 
 .box{
@@ -199,6 +292,8 @@ h2{
     padding-left: 100px;
     gap: 80px;
     height: 400px;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
 }
 
 .box1{
@@ -228,7 +323,11 @@ h2{
     padding: 50px;
     padding-left: 100px;
     gap: 80px;
-    height: 700px;
+    height: 800px;
+    font-family: "Poppins", sans-serif;
+}
+.hh2{
+    font-size: 30px;
 }
 .box3{
     border-radius: 8px;
@@ -240,12 +339,12 @@ h2{
 .img3{
     border-radius: 8px;
     width: 300px;
-    height: 300px;
+    height: 400px;
 }
 
 .img4{
       width: 300px;
-    height: 300px;
+    height: 400px;
     border: 5px solid black;
     border-radius: 10px;
       position: absolute;
@@ -254,8 +353,17 @@ h2{
 }
 
 .text4{
-    margin-top: 450px;
+    margin-top: 400px;
     margin-left: 0px;
+    font-size: 12px;
+    position: relative;
+ left: 180px;
+
+}
+
+.text5{
+    font-size: 12px;
+
 }
 
 .section5{
@@ -293,7 +401,7 @@ h2{
     width: 500px;
     padding: 20px;
     position: absolute;
-    bottom: -2400px;
+    bottom: -2500px;
     right: 200px;
 }
 .pp1{
@@ -345,6 +453,7 @@ h2{
     padding: 50px;
     padding-left: 200px;
     gap: 80px;
+    font-family: "Poppins", sans-serif;
     height: 700px;
     margin-top: 30px;
 }
@@ -361,7 +470,7 @@ h2{
 
 .text8{
     font-family: "Poppins", sans-serif;
-    padding-top: 30px;
+    padding-top: 20px;
     text-align: center;
 }
 .section8{
@@ -379,9 +488,32 @@ h2{
      background-color: rgb(27, 27, 27);
     padding: 10px;
     border-radius: 5px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
+
+.text10{
+display: flex;
+    flex-direction: column;
+ padding-bottom: 30px;
+}
+
+h4{
+      color: #8C5E3C;
+}
+
+ .fa-mug-hot {
+    width: 60px;
+    font-size: 50px;
+ }
+ .fa-people-group{
+    width: 70px;
+    font-size: 50px;
+ }
+ .fa-receipt{
+ width: 50px;
+    font-size: 50px;
+ }
 .text9{
     font-family: "Poppins", sans-serif;
     margin-bottom: 30px;
@@ -390,11 +522,11 @@ h2{
 
 .p4{
     margin-top: 15px;
-    font-size: 11px;
+    font-size: 13px;
 }
 
 .h3-1{
-    font-size: 15px;
+    font-size: 18px;
     color:#8C5E3C ;
      margin-top: 15px;
 }
@@ -407,22 +539,310 @@ h2{
     border: 1px solid white;
     padding: 10px;
     border-radius: 5px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 600px;
 }
 
 .section9{
-    background-image: url(https://i.pinimg.com/736x/d0/51/d9/d051d9756a0e38e896e68a7da85d9894.jpg);
+    background-image: url(https://i.pinimg.com/736x/41/4d/c8/414dc8b7991ac61171f1b1263a208337.jpg);
     background-repeat:no-repeat;
-   /* height: 20; */
-       background-color: rgba(0, 0, 0, 0.555);
+   height: 20;
+       background-color: rgba(0, 0, 0, 0.856);
   background-blend-mode: darken;
   background-position: 0 80%;
     background-size: cover;
     color: white;
+     padding: 50px;
+    padding-left: 100px;
+   
+
 }
 
 .allboxes{
+    display: flex; 
+    gap:40px;
+    margin-top: 30px;
+}
+
+.box2{
+    background-color: black;
+    font-size: 12px;
+    padding: 20px;
+        font-family: "Poppins", sans-serif;
+        border: 1px solid white;
+} 
+
+.cof{
     display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+  .icon{
+    padding-top: 20px;
+    height: 80px;
+  }
+
+  .icon i{
+      background-color: #b07a4d;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 18px;
+    gap: 20px;
+    cursor: pointer;
+  }
+
+  .section11{
+    display: flex;
+   padding-left: 150px;
+ background-color: black;
+    display: flex;
+padding-left: 200px;
+    align-items: center;
+       font-family: "Poppins", sans-serif;
+    color: white;
+    gap: 30px;
+    border: 1px solid  #b07a4d;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    
+  }
+  .one{
+    display: flex;
+  }
+
+  .section12{
+    background-color: black;
+    color: white;
+       font-family: "Poppins", sans-serif;
+       font-size: 12px;
+       text-align: center;
+       padding: 10px;
+     
+  }
+
+  footer{
+    margin-top: 40px;
+     margin-bottom: 10px;
+  }
+
+
+  /* ==========================
+   TABLET
+========================== */
+
+@media (max-width:1024px){
+
+header{
+    justify-content: space-between;
+    padding:20px 40px;
+    gap:40px;
+}
+
+nav ul{
     gap:20px;
+}
+
+.section1,
+.section2,
+.section3,
+.section4,
+.section5,
+.section7{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    padding:60px 40px;
+    height:auto;
+}
+
+.text,
+.text2,
+.text3,
+.text4,
+.text5,
+.text6,
+.text8{
+    margin:0;
+    left:0;
+}
+
+.icons{
+    display:none;
+}
+
+.box,
+.box1,
+.box3,
+.box4{
+    width:90%;
+    max-width:500px;
+    height:auto;
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5{
+    position:static;
+    width:100%;
+    height:auto;
+}
+
+.allimages,
+.allboxes{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.section6{
+    height:auto;
+}
+
+.section7{
+    gap:40px;
+}
+
+.btn5{
+    margin:40px auto;
+    display:block;
+}
+
+.section11{
+    flex-direction:column;
+    padding:30px;
+    text-align:center;
+}
+
+}
+
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width:767px){
+
+header{
+    flex-direction:column;
+    gap:20px;
+    height:auto;
+    padding:20px;
+}
+
+nav ul{
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+.section1{
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.text{
+    margin:0;
+    padding-top:40px;
+}
+
+h1{
+    font-size:2rem;
+}
+
+h2{
+    font-size:1.8rem;
+}
+
+.p1,
+.p2,
+.p3,
+.p4{
+    font-size:14px;
+}
+
+.section2,
+.section3,
+.section4,
+.section5,
+.section6,
+.section7,
+.section8,
+.section9{
+    flex-direction:column;
+    padding:40px 20px;
+    height:auto;
+}
+
+.box,
+.box1,
+.box3,
+.box4{
+    width:100%;
+    margin:20px 0;
+    height:auto;
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5{
+    position:static;
+    width:100%;
+    height:auto;
+}
+
+.text2,
+.text3,
+.text4,
+.text5,
+.text6{
+    margin:0;
+    position:static;
+    width:100%;
+    text-align:center;
+}
+
+.allimages,
+.boxes1,
+.allpic,
+.allboxes{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.pic{
+    width:100%;
+    max-width:300px;
+    height:auto;
+}
+
+.btn1,
+.btn2,
+.btn3,
+.btn4,
+.btn5{
+    width:170px;
+    margin:20px auto;
+    display:block;
+}
+
+.icons{
+    display:none;
+}
+
+.section11{
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+}
+
 }
