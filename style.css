@@ -316,16 +316,7 @@ h2{
  margin-top: 40px;
 }
 
-.section4{
-    display: flex;
-    background-color: rgb(27, 27, 27);
-    color: #fff;
-    padding: 50px;
-    padding-left: 100px;
-    gap: 80px;
-    height: 800px;
-    font-family: "Poppins", sans-serif;
-}
+
 .hh2{
     font-size: 30px;
 }
@@ -401,7 +392,7 @@ h2{
     width: 500px;
     padding: 20px;
     position: absolute;
-    bottom: -2500px;
+    bottom: -1700px;
     right: 200px;
 }
 .pp1{
@@ -458,6 +449,7 @@ h2{
     margin-top: 30px;
 }
 
+
 .pic{
     width: 250px;
     height: 250px;
@@ -470,7 +462,7 @@ h2{
 
 .text8{
     font-family: "Poppins", sans-serif;
-    padding-top: 20px;
+    padding-top: 60px;
     text-align: center;
 }
 .section8{
@@ -484,7 +476,7 @@ h2{
 .btn4{
       height: 40px;
     width: 130px;
-     color: #8C5E3C;
+     color: white;
      background-color: rgb(27, 27, 27);
     padding: 10px;
     border-radius: 5px;
@@ -539,9 +531,17 @@ h4{
     border: 1px solid white;
     padding: 10px;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 60px;
     margin-left: 600px;
 }
+
+.btn5:hover{
+    background-color: white;
+    color: #8C5E3C;
+    font-weight: 600;
+       border: 1px solid white;
+}
+
 
 .section9{
     background-image: url(https://i.pinimg.com/736x/41/4d/c8/414dc8b7991ac61171f1b1263a208337.jpg);
@@ -557,6 +557,7 @@ h4{
    
 
 }
+
 
 .allboxes{
     display: flex; 
@@ -638,7 +639,7 @@ padding-left: 200px;
 header{
     justify-content: space-between;
     padding:20px 40px;
-    gap:40px;
+    gap:20px;
 }
 
 nav ul{
@@ -697,6 +698,16 @@ nav ul{
     flex-wrap:wrap;
     justify-content:center;
 }
+.boxes1{
+     border: 1px solid white;
+     margin-bottom: 10px;
+}
+.text1{
+    
+    border-radius: none;
+    
+    border: none;
+}
 
 .section6{
     height:auto;
@@ -712,12 +723,37 @@ nav ul{
 }
 
 .section11{
-    flex-direction:column;
-    padding:30px;
+      display: flex;
+    padding:10px;
     text-align:center;
 }
-
+.one{
+    font-size: 10px;
 }
+h3{
+   font-size: 15px;
+}
+.section5{
+    display: none;
+}
+.img5{
+    height: 400px;
+    width: 400px;
+}
+
+.pic{
+        width: 134px;
+}
+
+.btn4{
+    margin-top: 70px;
+}
+footer{
+      margin-top: 40px;
+     margin-bottom: 10px;
+}
+}
+
 
 
 
@@ -726,27 +762,18 @@ nav ul{
 ========================== */
 
 @media (max-width:767px){
-
-header{
-    flex-direction:column;
-    gap:20px;
-    height:auto;
-    padding:20px;
-}
-
-nav ul{
-    flex-direction:column;
-    align-items:center;
-    gap:15px;
-}
-
+ header,  nav {
+    display: none; /* Keeps menu hidden until toggled via JavaScript */
+  }
 .section1{
     flex-direction:column;
     justify-content:center;
     text-align:center;
     padding:40px 20px;
 }
-
+.section5{
+    display: none;
+}
 .text{
     margin:0;
     padding-top:40px;
@@ -759,7 +786,9 @@ h1{
 h2{
     font-size:1.8rem;
 }
-
+.img5, .box4{
+    display: none
+}
 .p1,
 .p2,
 .p3,
@@ -822,7 +851,8 @@ h2{
 .pic{
     width:100%;
     max-width:300px;
-    height:auto;
+    height:300px;
+    margin-bottom: 10px;
 }
 
 .btn1,
